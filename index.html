@@ -7,32 +7,43 @@
     <meta name="keywords" content="egor, cv, resume">
     <meta name="description" content="Это сайт - резюме Егора Сухрамендо">
     <title>Egor Resume</title>
+    
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
+<div class="conteiner"> 
+    <img class="img" src="eto_ya.jpg">
+    <div class="card3">
+    <h1 class="FIO">Егор Сухрамендо</h1> 
+    <p class="student">
+        Я студент <strong>четвертого курса</strong> специальности ИБТС.
+    </p>
+    <p class="student">
+        Я люблю <em>смотреть фильмы, читать книги</em> и <em>учиться новому.</em>
+    </p> 
 
-    <img src="it's_me.jpg" width="270">
-    
-    <h1>Егор Сухрамендо</h1> 
-    <p>Я студент <strong>четвертого курса</strong> специальности ИБТС.</p>
-    <p>Я люблю <em>смотреть фильмы, читать книги и учиться новому.</em></p> 
-
-    <h4>Cписок социальных сетей:</h4>
+    <h4 class="MOS">Cписок социальных сетей:</h4>
     <a href="https://vk.com/edragazzo" target="_blank">ВКонтакте</a>
     |
     <a href="https://www.youtube.com/channel/UCX2LPddR-3dffs3D4BYeu8g" target="_blank">YouTube</a>
     |
     <a href="https://passport.yandex.ru/profile" target="_blank">Yandex</a>
+    </div>
 
-    <h2>Мои хобби</h2>
-    <ol>
+    <div class="card1">
+    <h2 class="MOS">Мои хобби</h2>
+    <ul class="hobby">
         <li>Ведение "ежедневника"</li>
         <li>Чтение книг</li>
         <li>Домашние физические тренировки</li>
-    </ol>
+    </ul>
+    </div>
 
-    <h2>Опыт работы</h2>
-   
-    <table width="500">
+    <div class="card2">   
+    <h2 class="MOS">Опыт работы</h2>
+    <div class="work">
+    <table class="table">
         <thead>
             <tr>
                 <th>Название</th>
@@ -59,25 +70,35 @@
            </tr> 
         </tbody>
     </table>
+    </div>
+    </div>   
 
-    <h2>Связаться со мной</h2>
-    <form >
-        <div>
-            <label for="text">Ваше имя:</label>
-            <input type="text" id="text" placeholder="Введите имя">
+    <div class="card3">
+    <div class="form">
+    <form class="form1">
+        <h2 class="MOS">Связаться со мной</h2>
+
+        <div class="form-row">
+
+            <div class="form-group">
+                <label for="text">Ваше имя:</label>
+                <input type="text" id="text" placeholder="Введите имя">
+            </div>
+            <div class="form-group">
+                <label for="email">Ваше email:</label>
+                <input type="email" id="email" placeholder="Введите email">
+            </div>
+
         </div>
-        <div>
-            <label for="email">Ваше email:</label>
-            <input type="email" id="email" placeholder="Введите email">
-        </div>
-        
-        <div>
+        <div class="form-group">
             <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea name="message" id="message" cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
+            <textarea name="message" id="message" cols="32" rows="5" placeholder="Введите сообщение..."></textarea>
         </div>
-
-        <button type="submit">Отправить!</button>
+        <button class="btn" type="submit">Отправить</button>
     </form>
+        <br>
+    </div>
+    </div>
+</div> 
 </body>
 </html>
